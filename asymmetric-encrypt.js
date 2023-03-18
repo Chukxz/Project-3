@@ -8,7 +8,7 @@ const encryptedDate = publicEncrypt(
     Buffer.from(message)
 );
 
-console.messager = 'the brititsh are coming!'
+console.messager = 'the british are coming!'
 
 const decryptedData = privateDecrypt(
     privateKeym,
