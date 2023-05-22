@@ -3,7 +3,7 @@ const { publicKey, privateKey } = require('./keypair');
 
 const message = 'the british are coming!'
 
-const encryptedDate = publicEncrypt(
+const encryptedData = publicEncrypt(
     publicKey,
     Buffer.from(message)
 );
@@ -11,8 +11,8 @@ const encryptedDate = publicEncrypt(
 console.messager = 'the british are coming!'
 
 const decryptedData = privateDecrypt(
-    privateKeym,
-    encryptedData
+    privateKey,
+    encryptedData,
 );
 
 console.log(decryptedData.toString('utf-8'));
